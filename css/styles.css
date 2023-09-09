@@ -10,6 +10,7 @@
  * Copyright 2011-2022 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+ 
  /* Color Theme Swatches in Hex */
 .Artmodul-Branding-1-hex { color: #011126; }
 .Artmodul-Branding-2-hex { color: #262624; }
@@ -50,8 +51,8 @@
   --bs-danger: #dc3545;
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
-  --bs-primary-rgb: 30, 48, 243;
-  --bs-secondary-rgb: 226, 30, 128;
+  --bs-primary-rgb: 40, 122, 222;
+  --bs-secondary-rgb: 250, 28, 94;
   --bs-success-rgb: 25, 135, 84;
   --bs-info-rgb: 13, 202, 240;
   --bs-warning-rgb: 255, 193, 7;
@@ -81,8 +82,8 @@
   --bs-border-radius-xl: 1rem;
   --bs-border-radius-2xl: 2rem;
   --bs-border-radius-pill: 50rem;
-  --bs-link-color: #1e30f3;
-  --bs-link-hover-color: #1826c2;
+  --bs-link-color: #1F7CB0;
+  --bs-link-hover-color: #5538F5;
   --bs-code-color: #e21e80;
   --bs-highlight-bg: #fff3cd;
 }
@@ -2862,11 +2863,11 @@ textarea.form-control-lg {
 
 .btn-primary {
   --bs-btn-color: #fff;
-  --bs-btn-bg: #1e30f3;
-  --bs-btn-border-color: #1e30f3;
+  --bs-btn-bg: #287ADE;
+  --bs-btn-border-color: #287ADE;
   --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #1a29cf;
-  --bs-btn-hover-border-color: #1826c2;
+  --bs-btn-hover-bg: #1F7CB0;
+  --bs-btn-hover-border-color: #1F7CB0;
   --bs-btn-focus-shadow-rgb: 64, 79, 245;
   --bs-btn-active-color: #fff;
   --bs-btn-active-bg: #1826c2;
@@ -11608,7 +11609,7 @@ html {
   height: 80vw;
   max-height: 45rem;
   position: absolute;
-  bottom: 0;
+  bottom: -7%;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -11628,7 +11629,7 @@ html {
   top: 6.05vw;
 }
 .profile .dots-2 svg {
-  fill: #1e30f3;
+  fill: #fb1f68;
 }
 .profile .dots-3 {
   position: absolute;
@@ -11646,13 +11647,14 @@ html {
   bottom: 4vw;
 }
 .profile .dots-4 svg {
-  fill: #1e30f3;
+  fill: #fb1f68;
 }
 
 @media (min-width: 576px) {
   .profile {
     height: 60vw;
     width: 60vw;
+
   }
   .profile .profile-img {
     height: 65vw;
@@ -11748,4 +11750,18 @@ html {
     width: 1.5vw;
     left: -2vw;
   }
+}
+
+
+li.nav-item::marker {
+  color: #FA1C5E;
+  content: "";
+}
+
+
+li::marker {
+  
+  color: #FA1C5E;
+  content: "▹  ";
+  font-size: 1.2rem;
 }
