@@ -11765,3 +11765,16 @@ li::marker {
   content: "▹  ";
   font-size: 1.2rem;
 }
+
+.responsive-image {
+  width: 100%;
+  height: auto;
+}
+
+@media (min-width: 768px) {
+  .responsive-image {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+  }
+}
